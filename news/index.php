@@ -80,6 +80,7 @@ $APPLICATION->SetTitle("Новости");
 		"DISPLAY_PREVIEW_TEXT" => "Y",	// Выводить текст анонса
 		"AJAX_OPTION_ADDITIONAL" => "",	// Дополнительный идентификатор
 		"SLIDER_PROPERTY" => "PICS_NEWS",	// Свойство с изображениями для слайдера
+		"SHOW_SPECIAL_DATE" => "N",	 // Установка даты в метатег
 		"SEF_URL_TEMPLATES" => array(
 			"news" => "",
 			"section" => "",

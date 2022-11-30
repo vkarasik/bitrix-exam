@@ -16,4 +16,5 @@ $MESS["TP_BN_THEME_GREEN"] = "зеленая";
 $MESS["TP_BN_THEME_RED"] = "красная";
 $MESS["TP_BN_THEME_YELLOW"] = "желтая";
 $MESS["TP_BN_TEMPLATE_THEME"] = "Цветовая тема";
+$MESS["SHOW_SPECIAL_DATE"] = "Установить свойство страницы specialdate";
 ?>

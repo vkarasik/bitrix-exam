@@ -168,3 +168,9 @@ $arTemplateParameters['TEMPLATE_THEME'] = array(
 	'DEFAULT' => 'blue',
 	'ADDITIONAL_VALUES' => 'Y'
 );
+
+$arTemplateParameters['SHOW_SPECIAL_DATE'] = array(
+	"NAME" => GetMessage("NL_SHOW_SPECIAL_DATE"),
+	"TYPE" => "CHECKBOX",
+	"DEFAULT" => "N",
+);

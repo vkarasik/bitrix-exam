@@ -191,3 +191,12 @@ $arResult["NAV_STRING"] = $arResult["NAV_RESULT"]->GetPageNavStringEx(
 	$this->__component,
 	$arResult["NAV_PARAM"]
 );
+
+/* SPECIAL DATE */
+if (isset($arParams["SHOW_SPECIAL_DATE"]) && $arParams["SHOW_SPECIAL_DATE"] == "Y") {
+	$arResult["SPECIAL_DATE"] = $arResult["ITEMS"][0]["TIMESTAMP_X"];
+	$component = $this->__component;
+	if (is_object($component)){
+		$component->SetResultCacheKeys(array("SPECIAL_DATE"));
+	}
+}

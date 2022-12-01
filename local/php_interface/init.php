@@ -12,5 +12,13 @@ Loader::registerNamespace(
     Loader::getDocumentRoot()."/local/php_interface/lib"
 );
 
-// Проверка при деактивации товара
-AddEventHandler("iblock", "OnBeforeIBlockElementUpdate", Array("\Lib\EventHandlers\CheckCount", "OnBeforeIBlockElementUpdateHandler"));
+use Bitrix\Main\EventManager;
+$handler = EventManager::getInstance();
+$handler->addEventHandler(
+    "iblock",
+    "OnBeforeIBlockElementUpdate",
+    array(
+        "Lib\\EventHandlers\\CheckCount",
+        "OnBeforeIBlockElementUpdateHandler",
+    )
+);

@@ -7,3 +7,7 @@
 
 $component = $this->getComponent();
 $arParams = $component->applyTemplateModifications();
+
+use Lib\Labels\Labels;
+
+$arResult["HLB_LABELS"] = Labels::getLabels();

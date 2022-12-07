@@ -230,6 +230,23 @@ $themeClass = isset($arParams['TEMPLATE_THEME']) ? ' bx-'.$arParams['TEMPLATE_TH
 						}
 						?>
 					</div>
+					<div class="product-item-label-text <?=$labelPositionClass?>">
+						<div class="custom-labels">
+							<? 
+								if($arResult['PROPERTIES']['LABEL_REF']['VALUE'])
+								{
+									foreach($arResult['PROPERTIES']['LABEL_REF']['VALUE'] as $label)
+									{
+										?>
+										<span style="background-color: rgb(<?=$arResult['HLB_LABELS'][$label]['UF_COLOR']?>)">
+											<a href="<?=$arResult['HLB_LABELS'][$label]['UF_LINK']?>" style="color: #ffffff"><?=$arResult['HLB_LABELS'][$label]['UF_NAME']?></a>
+										</span>
+										<?
+									}
+								}
+							?>
+						</div>
+					</div>
 					<?php
 					if ($arParams['SHOW_DISCOUNT_PERCENT'] === 'Y')
 					{

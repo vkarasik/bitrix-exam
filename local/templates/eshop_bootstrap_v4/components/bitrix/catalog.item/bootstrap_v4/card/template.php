@@ -25,6 +25,21 @@ use \Bitrix\Main\Localization\Loc;
  */
 ?>
 <div class="product-item">
+	<div class="product-item-label-text product-item-label-small">
+	<?
+		if ($item['PROPERTIES']['LABEL_REF']['VALUE'])
+		{
+			foreach($item['PROPERTIES']['LABEL_REF']['VALUE'] as $label)
+			{
+				?>
+				<span style="background-color: rgb(<?=$arParams['HLB_LABELS'][$label]['UF_COLOR']?>);">
+					<a href="<?=$arParams['HLB_LABELS'][$label]['UF_LINK']?>" style="color: #ffffff"><?=$arParams['HLB_LABELS'][$label]['UF_NAME']?></a>
+				</span>
+				<?
+			}
+		}
+	?>
+	</div>
 	<? if ($itemHasDetailUrl): ?>
 	<a class="product-item-image-wrapper" href="<?=$item['DETAIL_PAGE_URL']?>" title="<?=$imgTitle?>"
 		data-entity="image-wrapper">

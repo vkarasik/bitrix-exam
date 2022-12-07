@@ -195,6 +195,7 @@ $themeClass = isset($arParams['TEMPLATE_THEME']) ? ' bx-'.$arParams['TEMPLATE_TH
 					'MESS_BTN_COMPARE' => $arParams['~MESS_BTN_COMPARE'],
 					'MESS_BTN_SUBSCRIBE' => $arParams['~MESS_BTN_SUBSCRIBE'],
 					'MESS_BTN_ADD_TO_BASKET' => $arParams['~MESS_BTN_ADD_TO_BASKET'],
+					'HLB_LABELS' => $arResult['HLB_LABELS'],
 				];
 
 				$areaIds = [];

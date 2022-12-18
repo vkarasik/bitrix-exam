@@ -1,0 +1,14 @@
+.callback-form form{
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.callback-form .ui-alert{
+    margin-top: 10px;
+}
+
+.ui-alert-hidden{
+    display: none;
+}

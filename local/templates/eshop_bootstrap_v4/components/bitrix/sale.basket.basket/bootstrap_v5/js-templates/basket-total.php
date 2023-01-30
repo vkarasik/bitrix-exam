@@ -73,6 +73,20 @@ use Bitrix\Main\Localization\Loc;
 						<?=Loc::getMessage('SBB_ORDER')?>
 					</button>
 				</div>
+				<div class="basket-checkout-block basket-checkout-block-btn">
+				<?php
+					$APPLICATION->IncludeComponent(
+						"karasik:oneclick",
+						".default",
+						array(
+							"COMPONENT_TEMPLATE" => ".default",
+							"IS_CART" => true,
+							"CART" => array(),
+						),
+						false
+					);
+				?>
+				</div>
 			</div>
 		</div>
 

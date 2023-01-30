@@ -747,6 +747,20 @@ $themeClass = isset($arParams['TEMPLATE_THEME']) ? ' bx-'.$arParams['TEMPLATE_TH
 											}
 											?>
 										</div>
+										<div>
+											<?php
+												$APPLICATION->IncludeComponent(
+													"karasik:oneclick",
+													".default",
+													array(
+														"COMPONENT_TEMPLATE" => ".default",
+														"PRODUCT_ID" => $arResult["OFFERS"][$arResult["OFFERS_SELECTED"]]["ID"] ?? $arResult["ID"],
+														"IS_CART" => false
+													),
+													false
+												);
+											?>
+										</div>
 									</div>
 									<?php
 									if ($showSubscribe)

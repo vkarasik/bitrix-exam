@@ -1,0 +1,16 @@
+.one-click-popup{
+    padding: 20px; 
+    border-radius: 5px
+}
+
+.one-click-popup_hidden{
+    display:none;
+}
+
+.one-click-feedback {
+    text-align: center;
+}
+
+.one-click-feedback_hidden{
+    display: none;
+}

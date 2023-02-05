@@ -75,3 +75,15 @@ if ($isVerticalFilter)
 else
 	include($_SERVER["DOCUMENT_ROOT"]."/".$this->GetFolder()."/section_horizontal.php");
 ?>
+<?
+// Изменнение заголовка и title
+$APPLICATION->IncludeComponent(
+	"karasik:filter.meta",
+	".default",
+	array(
+	"SECTION_CODE" => $arResult['VARIABLES']['SECTION_CODE'],
+	"PARAMS" => $arParams,
+	),
+	false
+);
+?>
